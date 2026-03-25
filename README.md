@@ -2,4 +2,4 @@
 
 Site oficial da loja **Donnuts Deliciosos** — donuts artesanais feitos com amor.
 
-wwww.github.io/joaoPedro095810/Site-Donuts
+wwww.joaoPedro095810.github.io/Site-Donuts
