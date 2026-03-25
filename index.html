@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donnuts Deliciosos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+
+  <!-- MENU FIXO -->
+  <nav class="navbar">
+    <div class="nav-logo">🍩 Donnuts</div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Início</a></li>
+      <li><a href="sabores.html">Sabores</a></li>
+      <li><a href="cardapio.html">Cardápio</a></li>
+      <li><a href="contato.html">Fale Conosco</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-img-wrap">
+      <img src="images/donuts-hero.jpg" alt="Donnuts deliciosos" class="hero-circle-img"/>
+    </div>
+    <h1 class="hero-title">Donnuts Deliciosos</h1>
+    <p class="hero-subtitle">Descubra o mundo mágico dos nossos donuts artesanais,<br>feitos com amor e os melhores ingredientes</p>
+    <div class="hero-buttons">
+      <a href="sabores.html" class="btn-primary">Explorar Donnuts ›</a>
+      <a href="cardapio.html" class="btn-secondary">Ver Sabores</a>
+    </div>
+    <div class="hero-badges">
+      <div class="badge"><br>10+ Sabores</div>
+      <div class="badge"><br>100% Frescos</div>
+      <div class="badge">
+        <span class="stars">★★★<br>★★</span>
+        <span class="badge-label">Qualidade</span>
+      </div>
+    </div>
+  </section>
+
+  <script src="menu.js"></script>
+</body>
+</html>

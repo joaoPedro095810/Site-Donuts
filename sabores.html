@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sabores – Donnuts Deliciosos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">🍩 Donnuts</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sabores.html" class="active">Sabores</a></li>
+      <li><a href="cardapio.html">Cardápio</a></li>
+      <li><a href="contato.html">Fale Conosco</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <section class="page-section sabores-page">
+    <h1 class="page-title">Donnuts Deliciosos</h1>
+
+    <div class="hero-banner-wrap">
+      <img src="images/donuts-hero.jpg" alt="Donut principal" class="hero-banner-img"/>
+    </div>
+
+    <div class="tag-row">
+      <div class="tag-pill">Receitas exclusivas</div>
+      <div class="tag-pill">Feitos diariamente</div>
+    </div>
+
+    <div class="variedades-box">
+      <h2 class="variedades-title">Variedades de Sabores</h2>
+      <div class="variedades-grid">
+        <img src="images/donut-morango-choco.jpg" alt="Donut morango" class="var-img"/>
+        <img src="images/donut-chocolate-morango.jpg" alt="Donut chocolate" class="var-img"/>
+        <img src="images/donut-tradicional.jpg" alt="Donut tradicional" class="var-img"/>
+      </div>
+    </div>
+
+    <a href="cardapio.html" class="btn-primary btn-large">Nossos Sabores</a>
+  </section>
+
+  <script src="menu.js"></script>
+</body>
+</html>

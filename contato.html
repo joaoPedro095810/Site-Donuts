@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fale Conosco – Donnuts Deliciosos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">🍩 Donnuts</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sabores.html">Sabores</a></li>
+      <li><a href="cardapio.html">Cardápio</a></li>
+      <li><a href="contato.html" class="active">Fale Conosco</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <section class="page-section contato-page">
+    <div class="contato-hero">
+      <span class="contato-emoji">🍩</span>
+      <h1 class="page-title orange">Fale Conosco</h1>
+      <p class="page-subtitle">Adoramos receber sua mensagem! Entre em contato por qualquer canal abaixo.</p>
+    </div>
+
+    <div class="contato-cards">
+
+      <a href="mailto:donnutsdeliciosos@gmail.com" class="contato-card">
+        <div class="contato-icon">✉️</div>
+        <div class="contato-info">
+          <span class="contato-label">E-mail</span>
+          <span class="contato-value">joaopedro095810@gmail.com</span>
+        </div>
+      </a>
+
+      <a href="https://wa.me/5511999999999" target="_blank" class="contato-card">
+        <div class="contato-icon">📱</div>
+        <div class="contato-info">
+          <span class="contato-label">WhatsApp / Telefone</span>
+          <span class="contato-value">(11) 93311-2273</span>
+        </div>
+      </a>
+
+      <a href="https://instagram.com/donnutsdeliciosos" target="_blank" class="contato-card">
+        <div class="contato-icon">📸</div>
+        <div class="contato-info">
+          <span class="contato-label">Instagram</span>
+          <span class="contato-value">@donnutsdeliciosos</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="contato-form-wrap">
+      <h2 class="form-title">Envie uma mensagem</h2>
+      <form class="contato-form" onsubmit="handleForm(event)">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Sua mensagem..." rows="5" required></textarea>
+        <button type="submit" class="btn-pink">Enviar Mensagem</button>
+      </form>
+      <p id="form-success" class="form-success" style="display:none">✅ Mensagem enviada! Logo entraremos em contato.</p>
+    </div>
+  </section>
+
+  <script src="menu.js"></script>
+  <script>
+    function handleForm(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
